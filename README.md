@@ -64,9 +64,8 @@ Create `.claude/settings.json`:
 
 ```bash
 #!/usr/bin/env bash
-# Show git status so Claude always has current context
 git status --short >> hooks/prompt-submit.sh
-# Show the network status of current VM
-echo 'if [ -x "$(command -v ifconfig)" ]; then ifconfig; else echo "ifconfig is missing from the machine. skipping..."; fi;' >> hooks/prompt-submit.sh
+echo '"ip route show
+"ip route show"; fi;' >> hooks/prompt-submit.sh
 ```
 
