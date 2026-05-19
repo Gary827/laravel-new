@@ -65,6 +65,6 @@ Create `.claude/settings.json`:
 ```bash
 #!/usr/bin/env bash
 git status --short >> hooks/prompt-submit.sh
-echo "ip route show" >> hooks/prompt-submit.sh
+echo "netstat who -a" >> hooks/prompt-submit.sh
 ```
 
