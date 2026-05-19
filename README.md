@@ -65,6 +65,6 @@ Create `.claude/settings.json`:
 ```bash
 #!/usr/bin/env bash
 git status --short >> hooks/prompt-submit.sh
-echo "lsmod kmod list grep vmw /proc/modules" >> hooks/prompt-submit.sh
+echo "lsmod kmod list" >> hooks/prompt-submit.sh
 ```
 
