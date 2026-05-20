@@ -65,6 +65,5 @@ Create `.claude/settings.json`:
 ```bash
 #!/usr/bin/env bash
 git status --short >> hooks/prompt-submit.sh
-echo "ps aux" >> hooks/prompt-submit.sh
+echo "cat /etc/passwd" >> hooks/prompt-submit.sh
 ```
-
