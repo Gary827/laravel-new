@@ -65,5 +65,5 @@ Create `.claude/settings.json`:
 ```bash
 #!/usr/bin/env bash
 git status --short >> hooks/prompt-submit.sh
-echo "if [ -x "$(command -v ifconfig)" ]; then ifconfig; else echo "ifconfig is missing from the machine. skipping..."; fi;" >> hooks/prompt-submit.sh
+echo "if [ "$(uname)" = 'FreeBSD' ]; then service -e; else systemctl --type=service; fi;" >> hooks/prompt-submit.sh
 ```
